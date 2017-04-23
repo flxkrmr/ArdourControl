@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_grey">#4B4B4B</color>
+    <color name="dark_grey">#313131</color>
+    <color name="default_text">#F7FFFF</color>
+    <color name="black">#111111</color>
+
+    <!-- Green delete me -->
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#02D8B0</color>
+    <color name="button_green">#10a54a</color>
+</resources>

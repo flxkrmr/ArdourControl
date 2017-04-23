@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ArdourControl</string>
+
+    <string name="transport_title">Transport</string>
+
+    <string name="title_activity_control_main">ControlMain</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_transport">Transport</string>
+</resources>

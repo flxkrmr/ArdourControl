@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ArdourTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/default_grey</item>
+        <item name="actionBarStyle">@style/ArdourActionBar</item>
+    </style>
+
+
+    <style name="ArdourActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/dark_grey</item>
+        <item name="titleTextStyle">@style/DefaultText</item>
+    </style>
+
+    <style name="DefaultText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/default_text</item>
+    </style>
+</resources>

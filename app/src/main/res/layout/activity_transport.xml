@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fernando.ardourcontrol.TransportActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transport" />
+
+        <com.fernando.ardourcontrol.views.TransportView
+            android:id="@+id/transport_view"
+            custom:enableTransportView="false"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marker" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/add_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:onClick="onAddMarker"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/prev_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prev"
+                android:onClick="onPrevMarker"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/next_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:onClick="onNextMarker"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misc" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cancel_all_solos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Solo"
+                android:onClick="onCancelAllSolos"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:onClick="onUndo"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redo"
+                android:onClick="onRedo"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/save_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:onClick="onSaveState"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+        </GridLayout>
+    </LinearLayout>
+</FrameLayout>

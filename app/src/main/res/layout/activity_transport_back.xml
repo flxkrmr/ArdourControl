@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.fernando.ardourcontrol.TransportActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transport" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/toggle_loop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loop"
+                android:onClick="onToggleLoop"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/toggle_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play/Stop"
+                android:onClick="onToggleRoll"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/rec_enable_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rec"
+                android:onClick="onRecEnableToggle"
+                android:layout_row="0"
+                android:layout_column="2"/>
+
+            <Button
+                android:id="@+id/goto_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:onClick="onGotoStart"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/jump_bar_neg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left"
+                android:onClick="onJumpBarNeg"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/jump_bar_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right"
+                android:onClick="onJumpBarPos"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <Button
+                android:id="@+id/goto_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:onClick="onGotoEnd"
+                android:layout_row="1"
+                android:layout_column="3" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marker" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/add_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:onClick="onAddMarker"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/prev_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prev"
+                android:onClick="onPrevMarker"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/next_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:onClick="onNextMarker"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misc" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/toggle_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click"
+                android:onClick="onToggleClick"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/midi_panic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!"
+                android:onClick="onMidiPanic"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/cancel_all_solos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Solo"
+                android:onClick="onCancelAllSolos"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:onClick="onUndo"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redo"
+                android:onClick="onRedo"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/save_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:onClick="onSaveState"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+        </GridLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transport_play">/transport_play</string>
+    <string name="transport_stop">/transport_stop</string>
+    <string name="toggle_roll">/toggle_roll</string>
+    <string name="stop_forget">/stop_forget</string>
+    <string name="set_transport_speed">/set_transport_speed</string><!-- s -->
+    <string name="ffwd">/transport_stop</string>
+    <string name="rewind">/transport_stop</string>
+    <string name="goto_start">/goto_start</string>
+    <string name="goto_end">/goto_end</string>
+    <string name="jump_bars">/jump_bars</string><!-- bars -->
+    <string name="jump_seconds">/jump_seconds</string><!-- seconds -->
+    <string name="toggle_click">/toggle_click</string>
+    <string name="add_marker">/add_marker</string>
+    <string name="remove_marker">/remove_marker</string>
+    <string name="next_marker">/next_marker</string>
+    <string name="prev_marker">/prev_marker</string>
+    <string name="locate">/locate</string><!-- spos roll -->
+    <string name="loop_toggle">/loop_toggle</string>
+    <string name="loop_location">/loop_location</string><!-- start end -->
+    <string name="midi_panic">/midi_panic</string>
+    <string name="cancel_all_solos">/cancel_all_solos</string>
+    <string name="toggle_punch_in">/toggle_punch_in</string>
+    <string name="toggle_punch_out">/toggle_punch_out</string>
+    <string name="rec_enable_toggle">/rec_enable_toggle</string>
+    <string name="transport_frame">/transport_frame</string>
+    <string name="record_enabled">/record_enabled</string>
+    <string name="undo">/undo</string>
+    <string name="redo">/redo</string>
+    <string name="save_state">/save_state</string>
+    <!-- TODO more to come -->
+
+</resources>
